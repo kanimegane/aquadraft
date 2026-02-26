@@ -56,3 +56,21 @@ export interface AquaDraftState {
   environment: AquariumEnvironment;
   items: AquariumItem[];
 }
+
+export interface AppConfig {
+  budgetBlockMode: boolean; // 予算オーバー時の追加制限
+  showBudgetBar: boolean;   // 予算バー（将来的な拡張用）
+}
+
+export interface MaterialData {
+  readonly id: string;
+  readonly name: string;
+  readonly avgDensity: number; // 平均比重（定数として保持）
+  readonly price: number;
+}
+
+export interface LayoutState {
+  // ...既存の座標データ等
+  lastCalculatedWeight: number; // 非リアルタイム計算の結果
+  lastCalculatedCost: number;
+}
