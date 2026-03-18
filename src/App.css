@@ -40,3 +40,63 @@
 .read-the-docs {
   color: #888;
 }
+
+.home-layout {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.workspace {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.asset-sidebar, .property-sidebar {
+  width: 200px;
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.canvas-area {
+  flex: 1;
+  background: #e0f2f1;
+  border: 2px dashed #009688;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tank-frame {
+  width: 80%;
+  height: 60%;
+  background: white;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.placeholder-item {
+  padding: 0.5rem;
+  background: white;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ddd;
+  cursor: grab;
+}
+
+.primary-button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #009688;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
